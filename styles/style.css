@@ -15,7 +15,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   margin: 0 auto;
-  padding: clamp(0rem, -8.2528rem + 35.212vw, 23.438rem);
+  padding: 0 clamp(0rem, -8.143rem + 34.74vw, 23.125rem);
   font-family: var(--main__font);
   background-image: var(--background-gradient);
   background-size: cover;
