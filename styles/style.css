@@ -15,7 +15,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   margin: 0 auto;
-  padding: 0 clamp(0rem, -8.2528rem + 35.212vw, 23.438rem);
+  padding: clamp(0rem, -8.2528rem + 35.212vw, 23.438rem);
   font-family: var(--main__font);
   background-image: var(--background-gradient);
   background-size: cover;
@@ -255,7 +255,8 @@
 }
 
 .dialog-open {
-  max-width: 353px;
+  width: clamp(21.313rem, 21.048rem + 1.13vw, 22.063rem);
+  min-height: 191px;
 }
 
 .dialog__modal {
