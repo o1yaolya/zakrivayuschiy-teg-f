@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 0 clamp(0rem, -8.143rem + 34.74vw, 23.125rem);
   font-family: var(--main__font);
@@ -62,7 +63,7 @@
 }
 
 .card {
-  margin-block-end: 50px;
+  margin-block-end: 49px;
   border: 2px solid var(--border-color);
   font-family: var(--main__font);
   font-size: 18px;
@@ -163,6 +164,9 @@
 
 .buttons {
   position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   border: 2px solid var(--border-color);
   overflow: hidden;
   background-color: var(--background-color);
@@ -203,12 +207,13 @@
   justify-content: end;
   gap: 7px;
   margin-inline-end: 25px;
-  margin-block-end: 24px;
+  margin-block-end: 27px;
+  block-size: 39px;
 }
 
 .card__like-button {
   width: 130px;
-  padding: 7.5px 33px;
+  padding: 7.5px 0px;
   cursor: pointer;
 }
 
@@ -256,7 +261,7 @@
 
 .dialog-open {
   width: clamp(21.313rem, 21.048rem + 1.13vw, 22.063rem);
-  min-height: 191px;
+  height: 191px;
 }
 
 .dialog__modal {
@@ -324,17 +329,21 @@
 }
 
 .card__icon-button {
-  border: none;
   padding: 0;
   background: none;
   background-color: var(--background-color);
   cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
 }
 
-.card__icon-button:focus,
+.card__icon-button:focus {
+  outline: none;
+}
+
 .card__icon-button:focus-visible {
   outline: none;
-  transition: 0.3s ease;
+  border: 2px solid var(--border-color);
 }
 
 .heart {
