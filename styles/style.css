@@ -234,6 +234,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   gap: 8px;
   width: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);
   height: calc(8.688rem - clamp(3.438rem, 2.8rem + 2.7223vw, 5.25rem));
